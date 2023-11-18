@@ -33,5 +33,5 @@ function toggleTab(e)
 }
 
 let tab = document.querySelector("#tabs");
-let section = document.querySelector("#section");
+let section = document.querySelector("#tabText");
 tab.addEventListener("click", toggleTab);

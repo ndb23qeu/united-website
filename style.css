@@ -1,0 +1,118 @@
+:root {
+    /* all colours defined in presentation colour schemes */
+    --tan1: #FDF2E5;
+    --tan2: #FBE2C6;
+    --tan3: #F9D2A6;
+    --tan4: #F4B266;
+
+    --red1: #FF8D5C;
+    --red2: #F24900;
+    --red3: #7A2500;
+
+    --blue1: #8598D6;
+    --blue2: #3A56B0;
+    --blue3: #1F2D5C;
+
+    --green1: #B7D09F;
+    --green2: #7EAB55;
+    --green3: #47602F;
+
+    --black1: #4E4841;
+    --black2: #3D3833;
+    --black3: #2F2B27;
+    --black4: #141414;
+}
+
+
+body {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    background-color: var(--tan1);
+}
+nav {
+    background-color: var(--tan3);
+    height: 160px;
+    border-radius:8px;
+}
+nav > ul {
+    list-style-type: none;
+    vertical-align:middle;
+}
+#left{
+    display: inline-block;
+}
+#right {
+    display:inline-block;
+}
+.right {
+    text-align: right;
+}
+.nav {
+    display: inline-block;
+    align-items: center;
+    height:max-content;
+    vertical-align: middle;
+    padding:16px;
+}
+#link13 {
+    background-color: var(--red1);
+}
+#link14 {
+    background-color: var(--blue1);
+}
+#link15 {
+    background-color: var(--green1);
+}
+#link13 a, #link14 a, #link15 a {
+    color: var(--black4);
+    text-decoration: none;
+}
+#logoli {
+    display:inline-flexbox;
+    margin:0;
+    /* width:20%; */
+}
+#logoimg {
+    width: 20%;
+}
+
+
+header {
+    background-color: var(--tan2);
+    margin: 16px;
+    border-radius:8px;
+}
+h1 {
+    margin:16px;
+    text-align: center;
+}
+
+#tabs {
+    list-style-type: none;
+}
+#tabs li {
+    display:inline-block;
+    margin: auto 4px;
+}
+#tabs button {
+    color:black;
+    border:0;
+    padding: 8px 16px;
+    background-color: var(--tan3);
+    border-radius: 5px;
+}
+#tabs button:hover {
+    background-color: var(--tan2);
+}
+#tabs button:active {
+    box-shadow:inset 2px 2px 4px gray;
+}
+#tabactive {
+    font-weight: bold;
+}
+
+
+footer {
+    border-radius:8px;
+    background: var(--tan2);
+    text-align: center;
+}

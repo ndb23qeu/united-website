@@ -8,22 +8,22 @@ function toggleTab(e)
         {
             case "1":
                 document.querySelector("#tabActive").removeAttribute("id");
-                section.textContent = "Text that appears on tab 1.";
+                section.textContent = "HARDCODED Text that appears on tab 1.";
                 e.target.id = "tabActive";
                 break;
             case "2":
                 document.querySelector("#tabActive").removeAttribute("id");
-                section.textContent = "Text that appears on tab 2.";
+                section.textContent = "HARDCODED Text that appears on tab 2.";
                 e.target.id = "tabActive";
                 break;
             case "3":
                 document.querySelector("#tabActive").removeAttribute("id");
-                section.textContent = "Text that appears on tab 3.";
+                section.textContent = "HARDCODED Text that appears on tab 3.";
                 e.target.id = "tabActive";
                 break;
             case "4":
                 document.querySelector("#tabActive").removeAttribute("id");
-                section.textContent = "Text that appears on tab 4.";
+                section.textContent = "HARDCODED Text that appears on tab 4.";
                 e.target.id = "tabActive";
                 break;
             default:

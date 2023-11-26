@@ -56,13 +56,25 @@ nav > ul {
 #link13 {
     background-color: var(--red1);
 }
+#link13.active {
+    background-color: var(--red2);
+}
 #link14 {
     background-color: var(--blue1);
+}
+#link14.active {
+    background-color: var(--blue2);
 }
 #link15 {
     background-color: var(--green1);
 }
-#link13 a, #link14 a, #link15 a {
+#link15.active {
+    background-color: var(--green2);
+}
+li.nav.active a{
+    color: var(--tan1);
+}
+.nav a {
     color: var(--black4);
     text-decoration: none;
 }
@@ -115,4 +127,14 @@ footer {
     border-radius:8px;
     background: var(--tan2);
     text-align: center;
+}
+
+section.centered
+{
+    margin:auto 20%;
+    padding:16px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: var(--tan2);
+    align-content: center;
 }

@@ -1,0 +1,4 @@
+This is information about all of us. This will always be displayed above the tabs.
+This is information about Tom. I think it's easiest if we keep all information on one line so we can use a split('\n') to make a list of information.
+This is information about Felix. There should only be 4 lines of text here.
+This is information about Harry. The text should wrap with the size of the window.

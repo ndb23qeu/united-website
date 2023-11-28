@@ -52,7 +52,7 @@ function toggleTab(e)
 }
 
 let tab = document.querySelector("#tabs");
-let section = document.querySelector("#tabText");
+let section = document.querySelector("#tabText > p");
 let header = document.querySelector("header > h1");
 let par = document.querySelector("main > p");
 tab.addEventListener("click", toggleTab);

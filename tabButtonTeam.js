@@ -1,4 +1,20 @@
-
+function loadContent()
+{
+    tab.innerHTML = `
+    <li>
+        <button>Tom</button>
+    </li>
+    <li>
+        <button>Felix</button>
+    </li>
+    <li>
+        <button>Harry</button>
+    </li>
+    `;
+    header.textContent = "Our Team";
+    par.textContent = "This is general info about our team.";
+    div.textContent = "Choose a tab to find out more about us";
+}
 function toggleTab(e)
 {
     if (e.currentTarget != e.target)
@@ -10,17 +26,17 @@ function toggleTab(e)
         {
             case "Tom":
 
-                div.textContent = "HARDCODED Info about Tom A";
+                div.textContent = "Info about Tom A";
                 e.target.id = "tabActive";
                 break;
             case "Felix":
 
-                div.textContent = "HARDCODED Info about Felix A";
+                div.textContent = "Info about Felix A";
                 e.target.id = "tabActive";
                 break;
             case "Harry":
 
-                div.textContent = "HARDCODED Info about Harry AR";
+                div.textContent = "Info about Harry AR";
                 e.target.id = "tabActive";
                 break;
             default:
@@ -31,4 +47,7 @@ function toggleTab(e)
 
 let tab = document.querySelector("#tabs");
 let div = document.querySelector("#tabText p");
+let header = document.querySelector("header > h1");
+let par = document.querySelector("section > p");
 tab.addEventListener("click", toggleTab);
+window.addEventListener("DOMContentLoaded", loadContent, false);

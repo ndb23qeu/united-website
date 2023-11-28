@@ -15,11 +15,12 @@ class HomeButton2
     {
         this.link = link;
         this.title = title;
+        this.class = 'imaig';
     }
 }
-const Button13 = new HomeButton1("page13.html","images/logo.jpg","Placeholder Logo","Climate Action","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-const Button14 = new HomeButton1("page14.html","images/logo.jpg","Placeholder Logo","Life Below Water","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-const Button15 = new HomeButton1("page15.html","images/logo.jpg","Placeholder Logo","Life On Land","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+const Button13 = new HomeButton1("page13.html","images/goal13.png","Placeholder Logo","Climate Action","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+const Button14 = new HomeButton1("page14.html","images/goal14.png","Placeholder Logo","Life Below Water","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+const Button15 = new HomeButton1("page15.html","images/goal15.png","Placeholder Logo","Life On Land","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
 const ButtonSignup = new HomeButton2("signup.html","Contact Us");
 const ButtonTeam = new HomeButton2("team.html","About Us");
 
@@ -40,7 +41,7 @@ function loadContent()
         return `
         <article class="homeButton">
             <a href=${item.link}>
-                <img alt=${item.imageAlt} src=${item.image}>
+                <img class=${item.id} alt=${item.imageAlt} src=${item.image}>
                 <h3>${item.title}</h3>
                 <p>${item.desc}</p>
             </a>

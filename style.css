@@ -42,13 +42,11 @@ nav > ul {
 }
 #right {
     display:inline-block;
-}
-.right {
     text-align: right;
 }
 .nav {
     display: inline-block;
-    align-items: center;
+    text-align: right;
     height:max-content;
     vertical-align: middle;
     padding:16px;
@@ -78,12 +76,8 @@ li.nav.active a{
     color: var(--black4);
     text-decoration: none;
 }
-#logoli {
-    display:inline-flexbox;
-    margin:0;
-    /* width:20%; */
-}
 #logoimg {
+    text-align: center;
     width: 20%;
 }
 
@@ -95,6 +89,7 @@ header {
 }
 h1 {
     margin:16px;
+    padding:4px;
     text-align: center;
 }
 

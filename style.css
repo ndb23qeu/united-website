@@ -78,7 +78,8 @@ li.nav.active a{
 }
 #logoimg {
     text-align: center;
-    width: 20%;
+    max-width: 20%;
+    max-height:100%;
 }
 
 
@@ -132,4 +133,8 @@ section.centered
     border-radius: 20px;
     background-color: var(--tan2);
     align-content: center;
+}
+.image {
+    width:33%;
+    display: inline-block;
 }

@@ -35,14 +35,12 @@ nav {
 }
 nav > ul {
     list-style-type: none;
-    vertical-align:middle;
 }
 #left{
     display: inline-block;
 }
 #right {
     display:inline-block;
-    text-align: right;
 }
 .nav {
     display: inline-block;
@@ -77,6 +75,7 @@ li.nav.active a{
     text-decoration: none;
 }
 #logoimg {
+    display: inline-block;
     text-align: center;
     max-width: 20%;
     max-height:100%;
@@ -118,13 +117,6 @@ h1 {
     font-weight: bold;
 }
 
-
-footer {
-    border-radius:8px;
-    background: var(--tan2);
-    text-align: center;
-}
-
 section.centered
 {
     margin:auto 20%;
@@ -137,4 +129,27 @@ section.centered
 .image {
     width:33%;
     display: inline-block;
+}
+
+footer {
+    border-radius:8px;
+    background: var(--tan2);
+    text-align: center;
+}
+
+@media only screen and (max-width:1500px)  {
+    nav {
+        display:none;
+    }
+    header h1 {
+        display: inline-block;
+        line-height: 50%;
+    }
+    #hamburger {
+        margin-top: 6px;
+        display: block;
+        float: right;
+        padding: 12px;
+        height:55%;
+    }
 }

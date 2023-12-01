@@ -35,11 +35,6 @@ nav {
 }
 nav > ul {
     list-style-type: none;
-}
-#left{
-    display: inline-block;
-}
-#right {
     display:inline-block;
 }
 .nav {

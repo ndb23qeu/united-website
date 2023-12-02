@@ -29,6 +29,7 @@ body {
     background-color: var(--tan1);
 }
 nav {
+    
     background-color: var(--tan3);
     height: 90px;
     border-radius: 8px;
@@ -36,13 +37,13 @@ nav {
 nav > ul {
     text-align: center;
     list-style-type: none;
-    display:inline-block;
+    vertical-align: middle;
 }
 .nav {
-    /* border-radius:4px; */
+    margin-top:16px;
     display: inline-block;
     height:max-content;
-    padding:16px;
+    padding:20px;
 }
 #navlogo {
     float:left;
@@ -203,5 +204,4 @@ footer {
         margin-right: 0;
         height: 36px;
     }
-    
 }

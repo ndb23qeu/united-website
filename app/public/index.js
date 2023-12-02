@@ -17,9 +17,9 @@ class HomeButton2
         this.title = title;
     }
 }
-const Button13 = new HomeButton1("page13.html","images/logo.jpg","Placeholder Logo","Climate Action","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-const Button14 = new HomeButton1("page14.html","images/logo.jpg","Placeholder Logo","Life Below Water","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-const Button15 = new HomeButton1("page15.html","images/logo.jpg","Placeholder Logo","Life On Land","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+const Button13 = new HomeButton1("climate.html","images/logo.jpg","Placeholder Logo","Climate Action","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+const Button14 = new HomeButton1("water.html","images/logo.jpg","Placeholder Logo","Life Below Water","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
+const Button15 = new HomeButton1("land.html","images/logo.jpg","Placeholder Logo","Life On Land","Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
 const ButtonSignup = new HomeButton2("signup.html","Contact Us");
 const ButtonTeam = new HomeButton2("team.html","About Us");
 

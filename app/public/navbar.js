@@ -1,9 +1,9 @@
 function loadContent()
 {
     linkHome.innerHTML = `<a id="logoa" href="index.html"><img id="logoimg" alt="Placeholder Logo" src="images/logo.jpg"></a>`;
-    link13.innerHTML = `<a href="page13.html">Climate Action</a>`;
-    link14.innerHTML = `<a href="page14.html">Life Below Water</a>`;
-    link15.innerHTML = `<a href="page15.html">Life On Land</a>`;
+    link13.innerHTML = `<a href="climate.html">Climate Action</a>`;
+    link14.innerHTML = `<a href="water.html">Life Below Water</a>`;
+    link15.innerHTML = `<a href="land.html">Life On Land</a>`;
     linkSignup.innerHTML = `<a href="signup.html">Sign Up</a>`;
     linkTeam.innerHTML = `<a href="team.html">Our Team</a>`;
     footer.innerHTML = `<p>copyright<br>sources</p>`;

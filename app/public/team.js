@@ -1,5 +1,5 @@
-function saveData(resp){
-    filedata = resp
+function saveData(res){
+    filedata = res
 }
 
 function drawContent(){

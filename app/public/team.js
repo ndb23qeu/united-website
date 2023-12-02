@@ -14,7 +14,7 @@ function drawContent(){
 function loadContent(){
     fetch("team.json")
     .then(res => res.json())
-    .then(data=> saveData(data))
+    .then(saveData)
     .then(drawContent)
     
 }

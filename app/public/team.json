@@ -5,15 +5,15 @@
     "members":[
         {
             "name":"Tom",
-            "textContent":"info about Tom A"
+            "textContent":"Info about Tom A"
         },
         {
             "name":"Felix",
-            "textContent":"info about Felix A"
+            "textContent":"Info about Felix A"
         },
         {
             "name":"Harry",
-            "textContent":"info about Harry AR"
+            "textContent":"Info about Harry AR"
         }
     ]
 }

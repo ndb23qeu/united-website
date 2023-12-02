@@ -1,0 +1,19 @@
+{
+    "title":"Our Team",
+    "description":"This is general info about our team.",
+    "defaultTextContent":"Choose a tab to find out more about us",
+    "members":[
+        {
+            "name":"Tom",
+            "textContent":"info about Tom A"
+        },
+        {
+            "name":"Felix",
+            "textContent":"info about Felix A"
+        },
+        {
+            "name":"Harry",
+            "textContent":"info about Harry AR"
+        }
+    ]
+}

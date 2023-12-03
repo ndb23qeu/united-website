@@ -1,4 +1,4 @@
-function loadContent()
+function loadNav()
 {
     linkHome.innerHTML = `<a id="logoa" href="index.html"><img id="logoimg" alt="Placeholder Logo" src="images/logo.jpg"></a>`;
     link13.innerHTML = `<a href="climate.html">Climate Action</a>`;
@@ -15,4 +15,4 @@ let link15 = document.querySelector("#link15");
 let linkSignup = document.querySelector("#linkSignup");
 let linkTeam = document.querySelector("#linkTeam");
 let footer = document.querySelector("footer");
-window.addEventListener("DOMContentLoaded", loadContent, false);
+window.addEventListener("DOMContentLoaded", loadNav, false);

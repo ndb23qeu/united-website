@@ -1,38 +1,48 @@
+function saveData(res){
+    filedata = res
+}
+
+function drawContent(){
+    header.textContent = filedata.title;
+    content.textContent = filedata.mainText;
+    submitButton.textContent = filedata.button
+    for (let i = 0; i<filedata.labels.length; i++){
+        labels[i].textContent=filedata.labels[i].text;
+        labels[i].htmlFor = filedata.labels[i].owner;
+    }
+    
+    
+}
+
+function loadContent(){
+    fetch("signup.json")
+    .then(res => res.json())
+    .then(saveData)
+    .then(drawContent)
+    
+}
+
+
 
 function onResponse(response){
-    firstName:firstNameI.value=''
-    lastName:lastNameI.value=''
-    email:emailAddressI.value=''
-    comment:commentI.value=''
+    for(let i=0;i< textEntries.length ;i++){
+        textEntries[i].value=''
+    }
     console.log(response)
-
 }
 
-//defining functions to create elements
-
-function createLabel(text, madeFor){
-    const label=document.createElement('label')
-    label.innerText = text
-    label.for = madeFor
-    return label
+function cleartext(){
+    for(let i=0;i< textEntries.length ;i++){
+        textEntries[i].value=''
+    }
 }
-
-function createInput(name,type){
-    const input=document.createElement('input')
-    input.name=name
-    input.type=type
-    input.required=true
-    //input.placeholder = "test" -- can be added back not sure about asthetics
-    return input
-}
-
 function processSubmit(e){
     e.preventDefault();
     const message = {
-        firstName:firstNameI.value,
-        lastName:lastNameI.value,
-        email:emailAddressI.value,
-        comment:commentI.value
+        firstName:textEntries[0].value,
+        lastName:textEntries[1].value,
+        email:textEntries[2].value,
+        comment:textEntries[3].value
     }
     const serializedMessage = JSON.stringify(message)
     const fetchOptions = {
@@ -47,42 +57,12 @@ function processSubmit(e){
     .then(onResponse)
     
 }
-
-//creating the elements
-const firstNameL = createLabel("First Name", "firstName")
-const lastNameL = createLabel("Last Name", "lastName")
-const emailAddressL = createLabel("Email Address", "emailAddress")
-const commentL = createLabel("Comment", "comment")
-
-const firstNameI = createInput("firstName","text")
-const lastNameI =  createInput("lastName","text")
-const emailAddressI = createInput("emailAddress","email")
-const commentI =  createInput("comment","text")
-
-const submit = document.createElement('button')
-submit.innerText = "Submit"
-
-
-//appending content to page
-const form = document.querySelector("form")
-
-form.appendChild(firstNameL);
-form.appendChild(document.createElement('br'))
-form.appendChild(firstNameI);
-form.appendChild(document.createElement('br'))
-form.appendChild(lastNameL);
-form.appendChild(document.createElement('br'))
-form.appendChild(lastNameI);
-form.appendChild(document.createElement('br'))
-form.appendChild(emailAddressL);
-form.appendChild(document.createElement('br'))
-form.appendChild(emailAddressI);
-form.appendChild(document.createElement('br'))
-form.appendChild(commentL);
-form.appendChild(document.createElement('br'))
-form.appendChild(commentI);
-form.appendChild(document.createElement('br'))
-form.appendChild(document.createElement('br'))
-form.appendChild(submit);
-
+labels=document.querySelectorAll("#signUp label")
+header = document.querySelector("header > h1")
+content=document.querySelector("main > p")
+form=document.getElementById("signUp")
+textEntries=document.querySelectorAll('#signUp input, textarea')
+submitButton=document.querySelector('#signUp button')
+cleartext()
 form.addEventListener("submit",processSubmit, false)
+window.addEventListener("DOMContentLoaded", loadContent, false)

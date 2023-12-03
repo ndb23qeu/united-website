@@ -5,7 +5,6 @@
         <title>Placeholder</title>
         <link rel="stylesheet" href="style.css">
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'> <!-- Lato from Google Fonts under the OFL -->
-        <script src="tabButton.js" defer></script>
         <script src="navbar.js" defer></script>
         <script src="signup.js" defer></script>
     </head>
@@ -42,8 +41,21 @@
             <h1>Placeholder title</h1>
         </header>
         <main>
-            <form method="post" action="" id="form">
+            <p></p>
+            <form method="post" action="" id="signUp">
+                    <fieldset>
+                    <label></label>
+                    <input name="firstName" type="text" required>
+                    <label></label>
+                    <input name="lastName" type="text" required>
+                    <label></label>
+                    <input name="emailAddress" type="email" required>
+                    <label>Comment</label>
+                    <textarea name="comment" required></textarea>
+                    <button></button>
+                </fieldset>
             </form>
+            <p id="post-res"></p>
         </main>
         <footer>
 

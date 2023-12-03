@@ -1,0 +1,25 @@
+{
+    "title":"Sign Up",
+    "mainText":"This is the sign up form for the website",
+    "button":"submit",
+    "responsep1":"Thank you",
+    "responsep2":"You have signed up successfully",
+    "labels":[
+        {
+            "text":"First Name",
+            "owner":"firstName"
+        },
+        {
+            "text":"Last Name",
+            "owner":"firstName"
+        },
+        {
+            "text":"Email Address",
+            "owner":"firstName"
+        },
+        {
+            "text":"Comment",
+            "owner":"firstName"
+        }
+    ]
+}

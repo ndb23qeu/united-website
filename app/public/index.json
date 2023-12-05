@@ -3,21 +3,21 @@
     "mainText":"This is sample text for where everything will go Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orci dolor, consectetur lobortis imperdiet et, elementum vitae magna. Donec tempor diam vel tristique tincidunt. Duis interdum ligula est, in feugiat sapien varius sed. Sed vestibulum id erat quis mattis. Nam interdum est id mattis vestibulum. Aliquam accumsan aliquam ultricies. Cras nec dictum est. Nunc imperdiet urna ornare ornare ultricies.",
     "mainContentPages":[{
         "link":"climate.html",
-        "image":"images/logo.jpg",
+        "image":"images/goal13.png",
         "imageAlt":"Placeholder Logo",
         "title":"Climate Action",
         "desc":"This is placeholder text for the description of the Climate Action page"
     },
     {
         "link":"water.html",
-        "image":"images/logo.jpg",
+        "image":"images/goal14.png",
         "imageAlt":"Placeholder Logo",
         "title":"Life Below Water",
         "desc":"This is placeholder text for the description of the Life Below Water page"
     },
     {
         "link":"land.html",
-        "image":"images/logo.jpg",
+        "image":"images/goal15.png",
         "imageAlt":"Placeholder Logo",
         "title":"Life On Land",
         "desc":"This is placeholder text for the description of the Life On Land page"

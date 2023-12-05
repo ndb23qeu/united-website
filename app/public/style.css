@@ -38,6 +38,7 @@ nav > ul {
     text-align: center;
     list-style-type: none;
     vertical-align: middle;
+    border-radius: 8px;
 }
 .nav {
     margin-top:16px;

@@ -7,6 +7,8 @@
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'> <!-- Lato from Google Fonts under the OFL -->
         <script src="navbar.js" defer></script>
         <script src="signup.js" defer></script>
+        <script src="hamburger.js" defer></script>
+        <script src="https://kit.fontawesome.com/91eb42eac0.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -15,21 +17,31 @@
 
 
         <header>
-            <h1>Placeholder title</h1>
+            <h1></h1>
+            
+            <a id="hamburger"><i class="fa-solid fa-bars"></i></a>
         </header>
         <main>
             <p></p>
             <form method="post" action="" id="signUp">
-                    <fieldset>
-                    <label></label>
-                    <input name="firstName" type="text" required>
-                    <label></label>
-                    <input name="lastName" type="text" required>
-                    <label></label>
-                    <input name="emailAddress" type="email" required>
-                    <label>Comment</label>
-                    <textarea name="comment" required></textarea>
-                    <button></button>
+                <fieldset class="centered">
+                    <div class="input" id="firstName">
+                        <label></label>
+                        <input name="firstName" type="text" required>
+                    </div>
+                    <div class="input" id="lastName">
+                        <label></label>
+                        <input name="lastName" type="text" required>
+                    </div>
+                    <div class="input" id="email">
+                        <label></label>
+                        <input name="emailAddress" type="email" required>
+                    </div>
+                    <div  class="input" id="commentField">
+                        <label></label>
+                        <textarea name="comment" required></textarea>
+                    </div>
+                    <button id="submit"></button>
                 </fieldset>
             </form>
             <p id="post-res"></p>

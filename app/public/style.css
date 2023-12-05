@@ -128,7 +128,7 @@ h1 {
     font-weight: bold;
 }
 
-section.centered
+.centered
 {
     margin:auto 20%;
     padding:16px;
@@ -137,9 +137,33 @@ section.centered
     background-color: var(--tan2);
     align-content: center;
 }
+
 .image {
+    width:100%;
+    border-radius:8px;
+}
+.homeButton {
+
     width:33%;
     display: inline-block;
+}
+
+.input {
+    display: inline-block;
+    width:40%;
+    margin: 3%;
+}
+
+.input input, .input textarea {
+    width:80%;
+}
+#submit {
+    background-color: var(--black4);
+    color: var(--tan1);
+    padding:4px 8px;
+    border-style: none;
+    border-radius: 8px;
+    float:inline-end;
 }
 
 footer {

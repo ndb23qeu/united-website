@@ -18,7 +18,7 @@ function loadMainContent()
         return `
         <article class="homeButton">
             <a href=${item.link}>
-                <img alt=${item.imageAlt} src=${item.image}>
+                <img class="image" alt=${item.imageAlt} src=${item.image}>
                 <h3>${item.title}</h3>
                 <p>${item.desc}</p>
             </a>

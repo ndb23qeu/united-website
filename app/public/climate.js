@@ -9,6 +9,9 @@ function drawContent(){
     for (let i =0; i<buttons.length; i++){
         buttons[i].textContent = (Object.keys(filedata.buttons))[i]
     }
+    // highlights the navbar with the current tab
+let activeNavTab = document.querySelector("#link13");
+activeNavTab.classList.add("active");
 }
 
 function loadContent(){
@@ -39,3 +42,4 @@ let header = document.querySelector("header > h1");
 let content = document.querySelector("main > p");
 tab.addEventListener("click", toggleTab);
 window.addEventListener("DOMContentLoaded", loadContent, false);
+

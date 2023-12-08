@@ -9,6 +9,11 @@ function drawContent(){
     for (let i =0; i<buttons.length; i++){
         buttons[i].textContent = filedata.members[i].name
     }
+
+
+// highlights the navbar with the current tab
+let activeNavTab = document.querySelector("#linkTeam");
+activeNavTab.classList.add("active");
 }
 
 function loadContent(){

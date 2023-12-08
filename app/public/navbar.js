@@ -12,3 +12,4 @@ function onProcessed(text) {
 let nav = document.querySelector("nav");
 fetch('navbar.txt')
 .then(onResponse, onError);
+

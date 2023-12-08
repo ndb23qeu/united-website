@@ -31,7 +31,7 @@ body {
 nav {
     
     background-color: var(--tan3);
-    height: 90px;
+    height: 74px;
     border-radius: 8px;
 }
 nav > ul {
@@ -41,15 +41,17 @@ nav > ul {
     border-radius: 8px;
 }
 .nav {
-    margin-top:16px;
+    margin-top:12px;
     display: inline-block;
     height:max-content;
-    padding:20px;
+    padding:16px;
+    margin-left: 8px;
+    border-radius:8px;
 }
 #navlogo {
     float:left;
     text-align: left;
-    padding:16px;
+    padding:12px;
     width:auto;
     height:52px;
 }
@@ -142,11 +144,16 @@ h1 {
     width:100%;
     border-radius:8px;
 }
+#mainB
+{
+    text-align: center;
+}
 .homeButton {
-
+    max-width:512px;
     width:33%;
     display: inline-block;
 }
+
 
 .input {
     display: inline-block;
@@ -172,7 +179,7 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width:1500px)  {
+@media only screen and (max-width:850px)  {
     #navlogo {
         display: none;
     }

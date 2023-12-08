@@ -38,6 +38,10 @@ function loadMainContent()
     mainB.innerHTML = mainButtons + utilButtons;
     header.textContent = filedata.title;
     par.textContent = filedata.mainText;
+
+    // highlights the navbar with the current tab
+let activeNavTab = document.querySelector("#linkHome");
+activeNavTab.classList.add("active");
 }
 /*function loadContent()
 {
@@ -73,3 +77,4 @@ const mainB = document.querySelector("#mainB");
 const header = document.querySelector("header > h1");
 const par = document.querySelector("main > p");
 window.addEventListener("DOMContentLoaded", getcontent, false);
+

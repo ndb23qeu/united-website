@@ -77,8 +77,9 @@ nav > ul {
 li.nav.active a{
     color: var(--tan1);
 }
-li.nav.hover{
-    background-color: var(--tan1);
+
+.nav a:hover{
+    text-decoration:underline;
 }
 .active {
     background-color: var(--black1);
@@ -153,7 +154,13 @@ h1 {
     width:33%;
     display: inline-block;
 }
-
+.homeButton a {
+    text-decoration: none;
+    color: var(--black4);
+}
+.homeButton a h3 {
+    font-weight:900;
+}
 
 .input {
     display: inline-block;
@@ -183,8 +190,14 @@ footer {
     #navlogo {
         display: none;
     }
+    @keyframes hidenavanim {
+        from {height: 216px;}
+        to {height: 0;}
+    }
     .hideNav{
-        display: none;
+        
+        animation-name: hidenavanim;
+        animation-duration: 0.3s;
     }
     .navBar {
         position:absolute;
@@ -195,19 +208,25 @@ footer {
         overflow: hidden;
         background-color: var(--tan2);
         padding:0;
+        margin:0;
+        margin-left:16px;
+        display: inline-block;
+    }
+    @keyframes shownavanim {
+        from {height: 0;}
+        to {height: 216px;}
     }
     .showNav{
-        display: inline-block;
-        height:auto;
-        padding:0;
-        margin:0;
-        margin-left:16px; 
+        height:216px;
+        animation-name: shownavanim;
+        animation-duration: 0.3s;
     }
-    .showNav ul {
+    .navBar ul {
         padding:0;
         margin:0;
     }
     .nav {
+        border-radius: 0;
         display: block;
         padding: 10px;
         margin:0;

@@ -56,7 +56,7 @@ function toggleTab(e)
 }
 
 let tab = document.querySelector("#tabs");
-let div = document.querySelector("#tabText p");
+let div = document.querySelector(".tabText p");
 let header = document.querySelector("header > h1");
 let par = document.querySelector("section > p");
 let buttons =document.querySelectorAll("button");

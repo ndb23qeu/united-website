@@ -78,8 +78,8 @@ li.nav.active a{
     color: var(--tan1);
 }
 
-.nav a:hover{
-    text-decoration:underline;
+.nav a:hover {
+    font-weight:bold;
 }
 .active {
     background-color: var(--black1);
@@ -163,21 +163,52 @@ h1 {
 }
 
 .input {
+    vertical-align: top;
     display: inline-block;
     width:40%;
     margin: 3%;
 }
-
+.input label{
+    display: block;
+}
 .input input, .input textarea {
     width:80%;
+    border-radius: 8px;
+    background-color: var(--tan1);
+    border-color: var(--black1);
+    border-width: 2px;
+}
+.input textarea {
+    max-width: max-content;
+}
+
+@keyframes submithover
+{
+    from {padding: 6px 12px;}
+    to {padding: 8px 16px;}
+}
+@keyframes submitunhover
+{
+    from {padding: 8px 16px; }
+    to {padding: 6px 12px; }
 }
 #submit {
-    background-color: var(--black4);
+    background-color: var(--black3);
     color: var(--tan1);
-    padding:4px 8px;
+    padding:6px 12px;
     border-style: none;
     border-radius: 8px;
     float:inline-end;
+}
+#submit:hover {
+    animation-name: submithover;
+    animation-duration: 0.1s;
+    padding: 8px 16px;
+}
+#submit:not(:hover)
+{
+    animation-name: submitunhover;
+animation-duration: 0.1s;
 }
 
 footer {

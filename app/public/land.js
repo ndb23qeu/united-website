@@ -5,7 +5,7 @@ function saveData(res){
 function drawContent(){
     header.textContent = filedata.title;
     content.textContent = filedata.mainText;
-    tabContent.textContent = filedata.buttons.one;
+    tabContent.textContent = filedata.buttons.default;
     for (let i =0; i<buttons.length; i++){
         buttons[i].textContent = (Object.keys(filedata.buttons))[i]
     }
@@ -19,8 +19,6 @@ function loadContent(){
     .then(res => res.json())
     .then(saveData)
     .then(drawContent)
-    
-    
 }
 
 /*function loadContent()
@@ -51,6 +49,7 @@ function toggleTab(e)
             document.querySelector("#tabActive").removeAttribute("id");
             tabContent.textContent = filedata.buttons[bP];
             e.target.id = "tabActive";
+            image.setAttribute("src", "images/land" + bP + ".png")
         }
         /*switch (bP)
         {
@@ -84,7 +83,8 @@ let tab = document.querySelector("#tabs");
 let buttons = document.querySelectorAll("#tabs button")
 let tabContent = document.querySelector("#tabText");
 let header = document.querySelector("header > h1");
-let content = document.querySelector("main > p");
+let content = document.querySelector("#pageSummary");
+let image = document.querySelector('#mainImg');
 tab.addEventListener("click", toggleTab);
 window.addEventListener("DOMContentLoaded", loadContent, false);
 

@@ -5,16 +5,16 @@
     --tan3: #F9D2A6;
     --tan4: #F4B266;
 
-    --red1: #FF8D5C;
+    --red1: #ffb9b6;
     --red2: #F24900;
     --red3: #7A2500;
 
-    --blue1: #8598D6;
+    --blue1: #aebbe6;
     --blue2: #3A56B0;
     --blue3: #1F2D5C;
 
-    --green1: #B7D09F;
-    --green2: #7EAB55;
+    --green1: #d3e7c0;
+    --green2: #98c56f;
     --green3: #47602F;
 
     --black1: #4E4841;
@@ -107,8 +107,17 @@ h1 {
     display: none;
 }
 
+#pageSummary
+{
+    color:black;
+    text-align: center;
+    margin:auto 30%;
+}
+
 #tabs {
-    list-style-type: none;
+    text-align: center;
+    width: 50%;
+
 }
 #tabs li {
     display:inline-block;
@@ -130,7 +139,27 @@ h1 {
 #tabactive {
     font-weight: bold;
 }
-
+#tabText {
+    align-content: center;
+    margin: auto 15%;
+    padding: 16px;
+    line-height: 1.5em;
+    border-radius:16px;
+    border-width: 4px;
+    border-style: solid;
+}
+.water {
+    background-color: var(--blue1);
+    border-color: var(--blue2);
+}
+.land {
+    background-color: var(--green1);
+    border-color: var(--green2);
+}
+.climate {
+    background-color: var(--red1);
+    border-color: var(--red3);
+}
 .centered
 {
     margin:auto 20%;
@@ -144,6 +173,14 @@ h1 {
 .image {
     width:100%;
     border-radius:8px;
+}
+#mainImg
+{
+    display: block;
+    border-radius: 32px;
+    margin: 16px auto;
+    width: 50%;
+
 }
 #mainB
 {
@@ -182,35 +219,19 @@ h1 {
     max-width: max-content;
 }
 
-@keyframes submithover
-{
-    from {padding: 6px 12px;}
-    to {padding: 8px 16px;}
-}
-@keyframes submitunhover
-{
-    from {padding: 8px 16px; }
-    to {padding: 6px 12px; }
-}
+
 #submit {
     background-color: var(--black3);
     color: var(--tan1);
     padding:6px 12px;
     border-style: none;
     border-radius: 8px;
-    float:inline-end;
+    display: inline-block;
+    text-align: center;
 }
 #submit:hover {
-    animation-name: submithover;
-    animation-duration: 0.1s;
-    padding: 8px 16px;
+    background-color: var(--black1);
 }
-#submit:not(:hover)
-{
-    animation-name: submitunhover;
-animation-duration: 0.1s;
-}
-
 footer {
     border-radius:8px;
     background: var(--tan2);

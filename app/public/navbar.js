@@ -1,15 +1,25 @@
-function onResponse(response) {
+function onNavResponse(response) {
     console.log(response);
-    response.text().then(onProcessed);
+    response.text().then(onNavProcessed);
+}
+function onNavProcessed(text) {
+    console.log(text);
+    destination.innerHTML=text;
 }
 function onError(error) {
     console.log(error);
 }
-function onProcessed(text) {
-    console.log(text);
-    nav.innerHTML=text;
+function onFooterResponse(response) {
+    console.log(response);
+    response.text().then(onFooterProcessed);
 }
-let nav = document.querySelector("nav");
+function onFooterProcessed(text) {
+    console.log(text);
+    destination.innerHTML=text;
+}
+nav = document.querySelector("nav");
 fetch('navbar.html')
-.then(onResponse, onError);
-
+.then(onNavResponse, onError);
+destination = document.querySelector("footer");
+fetch('footer.html')
+.then(onFooterResponse, onError)

@@ -10,6 +10,6 @@ function onProcessed(text) {
     nav.innerHTML=text;
 }
 let nav = document.querySelector("nav");
-fetch('navbar.txt')
+fetch('navbar.html')
 .then(onResponse, onError);
 

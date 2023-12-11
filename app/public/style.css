@@ -148,6 +148,9 @@ h1 {
     border-width: 4px;
     border-style: solid;
 }
+#tabText > p {
+    text-align: center;
+}
 .water {
     background-color: var(--blue1);
     border-color: var(--blue2);
@@ -181,6 +184,9 @@ h1 {
     margin: 16px auto;
     width: 50%;
 
+}
+#pfp{
+    width:80%;
 }
 #mainB
 {
@@ -238,7 +244,7 @@ footer {
     text-align: center;
 }
 
-@media only screen and (max-width:850px)  {
+@media only screen and (max-width:768px)  {
     #navlogo {
         display: none;
     }

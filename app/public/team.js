@@ -5,7 +5,7 @@ function saveData(res){
 function drawContent(){
     header.textContent = filedata.title;
     par.textContent = filedata.description;
-    div.textContent = filedata.defaultTextContent;
+    text.textContent = filedata.defaultTextContent;
     for (let i =0; i<buttons.length; i++){
         buttons[i].textContent = filedata.members[i].name
     }
@@ -34,17 +34,24 @@ function toggleTab(e)
         {
             case "Tom":
 
-                div.textContent = filedata.members[0].textContent;
+                text.textContent = filedata.members[0].textContent;
+                pfp.setAttribute("src", "images/tom.jpg")
+                pfp.setAttribute("alt","profile picture for tom")
                 e.target.id = "tabActive";
+                
                 break;
             case "Felix":
 
-                div.textContent = filedata.members[1].textContent;
+                text.textContent = filedata.members[1].textContent;
+                pfp.setAttribute("src", "images/felix.jpg")
+                pfp.setAttribute("alt","profile picture for felix")
                 e.target.id = "tabActive";
                 break;
             case "Harry":
 
-                div.textContent = filedata.members[2].textContent;
+                text.textContent = filedata.members[2].textContent;
+                pfp.setAttribute("src", "images/harry.png")
+                pfp.setAttribute("alt","profile picture for harry")
                 e.target.id = "tabActive";
                 break;
             default:
@@ -54,9 +61,10 @@ function toggleTab(e)
 }
 
 let tab = document.querySelector("#tabs");
-let div = document.querySelector(".tabText p");
+let text = document.querySelector("#tabText > p");
 let header = document.querySelector("header > h1");
 let par = document.querySelector("section > p");
 let buttons =document.querySelectorAll("button");
+let pfp = document.querySelector("#pfp")
 tab.addEventListener("click", toggleTab);
 window.addEventListener("DOMContentLoaded", loadContent, false);

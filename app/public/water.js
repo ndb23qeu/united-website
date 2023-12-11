@@ -6,7 +6,6 @@ function drawContent(){
     header.textContent = filedata.title;
     content.textContent = filedata.mainText;
     tabContent.textContent = filedata.buttons.default;
-    image.setAttribute("src", "images/waterDefault.png")
     image.setAttribute("alt", filedata.altText.default)
     for (let i =0; i<buttons.length; i++){
         buttons[i].textContent = (Object.keys(filedata.buttons))[i]

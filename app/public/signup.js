@@ -24,11 +24,21 @@ function loadContent(){
 
 
 
-function onResponse(response){
+function onResponse(res){
+    return res.text()
+    
+    
+}
+function onTextReady(text){
     for(let i=0;i< textEntries.length ;i++){
         textEntries[i].value=''
     }
-    console.log(response)
+    if (text.value = "complete"){
+        confirmation.textContent="Thank you an email has been sent to your address"
+    }else{
+        confirmation.text="an error has occured please try again later"
+    }
+    console.log(confirmation.text)
 }
 
 function cleartext(){
@@ -55,6 +65,7 @@ function processSubmit(e){
     }
     fetch('http://localhost:3000/signupHandler', fetchOptions)
     .then(onResponse)
+    .then(onTextReady)
     
 }
 labels=document.querySelectorAll("#signUp label")
@@ -63,6 +74,7 @@ content=document.querySelector("main > p")
 form=document.getElementById("signUp")
 textEntries=document.querySelectorAll('#signUp input, textarea')
 submitButton=document.querySelector('#signUp button')
+confirmation=document.querySelector('#post-res')
 cleartext()
 form.addEventListener("submit",processSubmit, false)
 window.addEventListener("DOMContentLoaded", loadContent, false)

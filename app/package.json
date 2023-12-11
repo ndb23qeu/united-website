@@ -4,8 +4,8 @@
   "description": "Our website!",
   "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,10 @@
     "nodemon": "^3.0.1"
   },
   "dependencies": {
-    "body-parser": "^1.20.2"
+    "body-parser": "^1.20.2",
+    "nodemailer": "^6.9.7"
   },
-  "nodemonConfig":{
+  "nodemonConfig": {
     "ignore": "accounts/*.json"
   }
 }
-

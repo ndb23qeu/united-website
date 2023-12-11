@@ -95,9 +95,11 @@ app.post('/signupHandler', jsonParser, (req,res) => {
                 if (err){
                     res.send(err)
                 }else {
-                    console.log('maybe')
+                    res.send("complete")
                 }
+                
             })
+            res.send("complete")
         }
     })
 })

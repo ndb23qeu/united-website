@@ -118,12 +118,11 @@ h1 {
 
 #tabs {
     text-align: center;
-    width: 50%;
-
+    width: 90%;
 }
 #tabs li {
     display:inline-block;
-    margin: auto 4px;
+    margin: 4px;
 }
 #tabs button {
     color:black;
@@ -194,8 +193,7 @@ h1 {
 {
     text-align: center;
 }
-#mainA
-{
+#mainA {
     text-align: center;
 }
 .homeButton {

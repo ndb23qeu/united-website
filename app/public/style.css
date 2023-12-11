@@ -23,7 +23,9 @@
     --black4: #141414;
 }
 
-
+main{
+    min-height: 80vh;
+}
 body {
     font-family: Lato, Arial, Helvetica, sans-serif;
     background-color: var(--tan1);
@@ -192,6 +194,10 @@ h1 {
 {
     text-align: center;
 }
+#mainA
+{
+    text-align: center;
+}
 .homeButton {
     max-width:512px;
     width:33%;
@@ -222,7 +228,8 @@ h1 {
     border-width: 2px;
 }
 .input textarea {
-    max-width: max-content;
+    width: 80%;
+    resize: none;
 }
 
 
@@ -245,6 +252,12 @@ footer {
 }
 
 @media only screen and (max-width:768px)  {
+    .homeButton{
+        width:90%;
+    }
+    #pageSummary{
+        margin: auto 5%;
+    }
     #navlogo {
         display: none;
     }
@@ -314,5 +327,20 @@ footer {
         margin:8px;
         margin-right: 0;
         height: 36px;
+    }
+    #mainImg{
+        width: 90%;
+    }
+    #tabText{
+        margin: auto 5%;
+    }
+    .centered{
+        margin:auto 5%;
+    }
+    .input {
+        vertical-align: top;
+        display: inline-block;
+        width:80%;
+        margin: 3%;
     }
 }

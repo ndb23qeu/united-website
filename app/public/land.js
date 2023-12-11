@@ -6,12 +6,11 @@ function drawContent(){
     header.textContent = filedata.title;
     content.textContent = filedata.mainText;
     tabContent.textContent = filedata.buttons.default;
+    image.setAttribute("src", "images/landDefault.png")
+    image.setAttribute("alt", filedata.altText.default)
     for (let i =0; i<buttons.length; i++){
         buttons[i].textContent = (Object.keys(filedata.buttons))[i]
     }
-    // highlights the navbar with the current tab
-    let activeNavTab = document.querySelector("#link15");
-    activeNavTab.classList.add("active");
 }
 
 function loadContent(){
@@ -50,6 +49,7 @@ function toggleTab(e)
             tabContent.textContent = filedata.buttons[bP];
             e.target.id = "tabActive";
             image.setAttribute("src", "images/land" + bP + ".png")
+            image.setAttribute("alt", filedata.altText[bP])
         }
         /*switch (bP)
         {

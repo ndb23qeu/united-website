@@ -10,6 +10,13 @@
             "Protection":"Globally, an estimated one in five fish caught originates from illegal, unreported and unregulated (IUU) fishing. This illicit practice is one of the greatest threats to marine ecosystems and fishing communities, distorting competition, undermining legitimate fishers, and devastating marine ecosystems and efforts to conserve marine biodiversity and sustainably manage fish stocks. Annual losses as a result of this practice are estimated at 11 to 26 million tons of fish, with an economic value of up to $23 billion. IUU fishing can be found in all types of fishing operations and takes place not only in national jurisdiction waters, but also on the high seas. A key instrument to combat IUU fishing is the Agreement on Port State Measures. As of May 2023, the agreement had tripled its signatories since 2016 to reach 75 Parties, including the European Union, to effectively cover 101 States and 60 per cent of port States. Between 2018 and 2022, there has been some progress at the global level in implementing instruments to combat IUU fishing. However, more concerted efforts are needed to ensure greater cooperation among all actors, from “sea to plate”, and more transparency and compliance with the international framework, along with strong legislation and greater monitoring and enforcement.",
             "default":"Click on a tab above to start reading about Life Below Water"
         },
-    "image":"images/water.png"
-        
+    "altText":
+    {
+        "Plastic":"Graph showing beach litter science initiatives",
+        "Eutrophication":"Bridge over poluted tropical water",
+        "Acidification":"Graph showing ph values based on sampling stations over time",
+        "Fishing":"Visual diagram showing how stock overfishing differentiates between ecosystem overfishing",
+        "Protection":"Men dredging off a boat",
+        "default":"Woman growing plants in a mudflat"
+    }
 }

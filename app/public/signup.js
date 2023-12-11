@@ -12,9 +12,6 @@ function drawContent(){
     }
     
     
-// highlights the navbar with the current tab
-let activeNavTab = document.querySelector("#linkSignup");
-activeNavTab.classList.add("active");
 }
 
 function loadContent(){

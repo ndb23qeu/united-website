@@ -39,9 +39,6 @@ function loadMainContent()
     header.textContent = filedata.title;
     par.textContent = filedata.mainText;
 
-    // highlights the navbar with the current tab
-let activeNavTab = document.querySelector("#linkHome");
-activeNavTab.classList.add("active");
 }
 /*function loadContent()
 {

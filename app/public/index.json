@@ -4,21 +4,21 @@
     "mainContentPages":[{
         "link":"climate.html",
         "image":"images/goal13.png",
-        "imageAlt":"Placeholder Logo",
+        "imageAlt":"Red logo of an eye with a globe inside",
         "title":"Climate Action",
         "desc":"Take urgent action to combat climate change and its impacts."
     },
     {
         "link":"water.html",
         "image":"images/goal14.png",
-        "imageAlt":"Placeholder Logo",
+        "imageAlt":"Blue logo of a fish underwater",
         "title":"Life Below Water",
         "desc":"Conserve and sustainably use the oceans, seas and marine resources for sustainable development"
     },
     {
         "link":"land.html",
         "image":"images/goal15.png",
-        "imageAlt":"Placeholder Logo",
+        "imageAlt":"Green logo of a tree and some birds above ground",
         "title":"Life On Land",
         "desc":"Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"
     }],

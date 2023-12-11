@@ -6,21 +6,21 @@
         "image":"images/goal13.png",
         "imageAlt":"Placeholder Logo",
         "title":"Climate Action",
-        "desc":"This is placeholder text for the description of the Climate Action page"
+        "desc":"Take urgent action to combat climate change and its impacts."
     },
     {
         "link":"water.html",
         "image":"images/goal14.png",
         "imageAlt":"Placeholder Logo",
         "title":"Life Below Water",
-        "desc":"This is placeholder text for the description of the Life Below Water page"
+        "desc":"Conserve and sustainably use the oceans, seas and marine resources for sustainable development"
     },
     {
         "link":"land.html",
         "image":"images/goal15.png",
         "imageAlt":"Placeholder Logo",
         "title":"Life On Land",
-        "desc":"This is placeholder text for the description of the Life On Land page"
+        "desc":"Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"
     }],
     "utilityPages":[{
         "link":"signup.html",

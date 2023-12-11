@@ -1,6 +1,6 @@
 {
     "title":"Home Page",
-    "mainText":"This is sample text for where everything will go Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orci dolor, consectetur lobortis imperdiet et, elementum vitae magna. Donec tempor diam vel tristique tincidunt. Duis interdum ligula est, in feugiat sapien varius sed. Sed vestibulum id erat quis mattis. Nam interdum est id mattis vestibulum. Aliquam accumsan aliquam ultricies. Cras nec dictum est. Nunc imperdiet urna ornare ornare ultricies.",
+    "mainText":"Welcome to the website on the United Nations' sustainable development goals (SDG) for climate change.",
     "mainContentPages":[{
         "link":"climate.html",
         "image":"images/goal13.png",

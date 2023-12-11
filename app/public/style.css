@@ -173,10 +173,27 @@ h1 {
     background-color: var(--tan2);
     align-content: center;
 }
-
+@keyframes imagehover {
+    from {width:95%}
+    to {width:99%}
+}
+@keyframes imageunhover {
+    from {width:99%}
+    to {width:95%}
+}
 .image {
-    width:100%;
+    animation-name: imageunhover;
+    animation-duration: 0.1s;
+    width:95%;
     border-radius:8px;
+}
+.image:hover{
+    animation-name:imagehover;
+    animation-duration: 0.1s;
+    width: 99%;
+}
+.image:not(:hover) {
+    
 }
 #mainImg
 {
@@ -186,15 +203,24 @@ h1 {
     width: 50%;
 
 }
-#pfp{
-    width:80%;
+#teamImage {
+    width:100%;
+    border-radius: 8px;
+    margin-bottom: 0;
 }
-#mainB
+#mainA {
+    margin: 16px;
+    display: flex;
+    text-align: center;
+}
+#mainB 
 {
     text-align: center;
 }
-#mainA {
-    text-align: center;
+#mainB article {
+    margin: auto 4px;
+    border-radius: 8px;
+    background-color: var(--tan2);
 }
 .homeButton {
     max-width:512px;

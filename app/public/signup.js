@@ -36,7 +36,7 @@ function onTextReady(text){
     if (text.value = "complete"){
         confirmation.textContent="Thank you an email has been sent to your address"
     }else{
-        confirmation.text="an error has occured please try again later"
+        confirmation.text="An error has occured please try again later"
     }
     console.log(confirmation.text)
 }

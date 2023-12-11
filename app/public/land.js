@@ -34,7 +34,7 @@ function loadContent(){
     <li>
         <button>4</button>
     </li>`;
-    header.textContent = "Placeholder Title";
+    header.textContent = "";
     content.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam orci dolor, consectetur lobortis imperdiet et, elementum vitae magna. Donec tempor diam vel tristique tincidunt. Duis interdum ligula est, in feugiat sapien varius sed. Sed vestibulum id erat quis mattis. Nam interdum est id mattis vestibulum. Aliquam accumsan aliquam ultricies. Cras nec dictum est. Nunc imperdiet urna ornare ornare ultricies.";
     tabContent.textContent = "Text that appears on tab 1.";
 }*/

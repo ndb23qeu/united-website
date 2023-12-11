@@ -35,7 +35,8 @@ function loadMainContent()
         </article>`;
     });
     utilButtons = utilButtons.join("");
-    mainB.innerHTML = mainButtons + utilButtons;
+    mainA.innerHTML = mainButtons
+    mainB.innerHTML = utilButtons;
     header.textContent = filedata.title;
     par.textContent = filedata.mainText;
 

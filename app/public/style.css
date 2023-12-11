@@ -192,9 +192,6 @@ h1 {
     animation-duration: 0.1s;
     width: 99%;
 }
-.image:not(:hover) {
-    
-}
 #mainImg
 {
     display: block;
@@ -206,7 +203,6 @@ h1 {
 #teamImage {
     width:100%;
     border-radius: 8px;
-    margin-bottom: 0;
 }
 #mainA {
     margin: 16px;
@@ -290,7 +286,6 @@ footer {
         to {height: 0;}
     }
     .hideNav{
-        
         animation-name: hidenavanim;
         animation-duration: 0.3s;
     }
@@ -357,6 +352,9 @@ footer {
     }
     #tabText{
         margin: auto 5%;
+    }
+    #mainA {
+        display: block;
     }
     .centered{
         margin:auto 5%;

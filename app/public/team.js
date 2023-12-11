@@ -29,11 +29,10 @@ function toggleTab(e)
     {
         const button = e.target.textContent;
         let activeTab = document.querySelector("#tabActive");
-        if (activeTab != null) {document.querySelector("#tabActive").removeAttribute("id")};
+        if (activeTab != null) {activeTab.removeAttribute("id");};
         switch (button)
         {
             case "Tom":
-
                 text.textContent = filedata.members[0].textContent;
                 pfp.setAttribute("src", "images/tom.jpg")
                 pfp.setAttribute("alt","profile picture for tom")
@@ -41,14 +40,12 @@ function toggleTab(e)
                 
                 break;
             case "Felix":
-
                 text.textContent = filedata.members[1].textContent;
                 pfp.setAttribute("src", "images/felix.jpg")
                 pfp.setAttribute("alt","profile picture for felix")
                 e.target.id = "tabActive";
                 break;
             case "Harry":
-
                 text.textContent = filedata.members[2].textContent;
                 pfp.setAttribute("src", "images/harry.png")
                 pfp.setAttribute("alt","profile picture for harry")

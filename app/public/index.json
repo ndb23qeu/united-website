@@ -2,32 +2,32 @@
     "title":"Home Page",
     "mainText":"Welcome to the website on the United Nations' sustainable development goals (SDG) for climate change.",
     "mainContentPages":[{
-        "link":"climate.html",
+        "link":"climate",
         "image":"images/goal13.png",
         "imageAlt":"Red logo of an eye with a globe inside",
         "title":"Climate Action",
         "desc":"Take urgent action to combat climate change and its impacts."
     },
     {
-        "link":"water.html",
+        "link":"water",
         "image":"images/goal14.png",
         "imageAlt":"Blue logo of a fish underwater",
         "title":"Life Below Water",
         "desc":"Conserve and sustainably use the oceans, seas and marine resources for sustainable development"
     },
     {
-        "link":"land.html",
+        "link":"land",
         "image":"images/goal15.png",
         "imageAlt":"Green logo of a tree and some birds above ground",
         "title":"Life On Land",
         "desc":"Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss"
     }],
     "utilityPages":[{
-        "link":"signup.html",
+        "link":"signup",
         "title":"Join our Newsletter"
     },
     {
-        "link":"team.html",
+        "link":"team",
         "title":"About Us"
     }]
 }

@@ -270,6 +270,20 @@ h1 {
 #submit:hover {
     background-color: var(--black1);
 }
+
+#tabText.felix {
+    background-color: rgb(225, 204, 218);
+    border-color: rgb(81, 32, 74);
+}
+.tom {
+    border-color:#1e1c57;
+    background-color: #cadaed;
+}
+.harry {
+    border-color:rgb(22, 95, 63);
+    background-color: rgb(189, 205, 198);
+}
+
 footer {
     border-radius:8px;
     background: var(--tan2);

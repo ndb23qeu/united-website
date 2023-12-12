@@ -33,6 +33,9 @@ function toggleTab(e)
         switch (button)
         {
             case "Tom":
+                section.classList.remove("felix");
+                section.classList.remove("harry");
+                section.classList.add("tom");
                 text.textContent = filedata.members[0].textContent;
                 pfp.setAttribute("src", "images/tom.jpg")
                 pfp.setAttribute("alt","profile picture for tom")
@@ -41,11 +44,17 @@ function toggleTab(e)
                 break;
             case "Felix":
                 text.textContent = filedata.members[1].textContent;
+                section.classList.add("felix");
+                section.classList.remove("harry");
+                section.classList.remove("tom");
                 pfp.setAttribute("src", "images/felix.jpg")
                 pfp.setAttribute("alt","profile picture for felix")
                 e.target.id = "tabActive";
                 break;
             case "Harry":
+                section.classList.remove("felix");
+                section.classList.add("harry");
+                section.classList.remove("tom");
                 text.textContent = filedata.members[2].textContent;
                 pfp.setAttribute("src", "images/harry.png")
                 pfp.setAttribute("alt","profile picture for harry")
@@ -58,6 +67,7 @@ function toggleTab(e)
 }
 
 let tab = document.querySelector("#tabs");
+let section = document.querySelector("#tabText");
 let text = document.querySelector("#tabText > p");
 let header = document.querySelector("header > h1");
 let par = document.querySelector("section > p");

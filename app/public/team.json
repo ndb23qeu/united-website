@@ -1,6 +1,6 @@
 {
     "title":"Our Team",
-    "description":"This is general info about our team.",
+    "description":"We are group Y15. Below are the people who brought you this website.",
     "defaultTextContent":"Choose a tab to find out more about us",
     "members":[
         {
@@ -9,7 +9,7 @@
         },
         {
             "name":"Felix",
-            "textContent":"Felix's main efforts were the design of the website through CSS and a little bit of JavaScript, keeping the team organised by using GitHub for version control and Trello for task management. Shown is a picture of his cat, Smudge."
+            "textContent":"My name is Felix and I'm a first year Computing Sciences student at UEA. My main efforts were the design of the website through CSS and a little bit of JavaScript. I also kept the team organised by using GitHub for version control and Trello for task management."
         },
         {
             "name":"Harry",

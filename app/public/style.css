@@ -133,6 +133,9 @@ h1 {
     padding: 8px 16px;
     background-color: var(--tan3);
     border-radius: 5px;
+}
+button {
+    font-size: medium;
     font-family: Lato, Arial, Helvetica, sans-serif;
 }
 #tabs button:hover {
@@ -246,7 +249,7 @@ h1 {
     display: block;
 }
 .input input, .input textarea {
-    width:80%;
+    width:100%;
     border-radius: 8px;
     background-color: var(--tan1);
     border-color: var(--black1);
@@ -259,6 +262,8 @@ h1 {
 
 
 #submit {
+    line-height: 01.1em;
+    width: 100%;
     background-color: var(--black3);
     color: var(--tan1);
     padding:6px 12px;
@@ -285,6 +290,7 @@ h1 {
 }
 
 footer {
+    margin: 1%;
     border-radius:8px;
     background: var(--tan2);
     text-align: center;
@@ -388,9 +394,13 @@ footer {
         margin:auto 5%;
     }
     .input {
+        justify-content: center;
         vertical-align: top;
         display: inline-block;
-        width:80%;
+        width:90%;
         margin: 3%;
+    }
+    .input input, .input textarea {
+        width: 100%;
     }
 }

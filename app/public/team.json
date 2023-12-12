@@ -5,7 +5,7 @@
     "members":[
         {
             "name":"Tom",
-            "textContent":"Info about Tom A"
+            "textContent":"I'm Tom and I am currently studying computer science at UEA, I am responsible for most of the javascript including the dynamic loading and the signup sheet, as well as implementing node and express into the website"
         },
         {
             "name":"Felix",

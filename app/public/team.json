@@ -5,7 +5,7 @@
     "members":[
         {
             "name":"Tom",
-            "textContent":"I'm Tom and I am currently studying computer science at UEA, I am responsible for most of the javascript including the dynamic loading and the signup sheet, as well as implementing node and express into the website"
+            "textContent":"I'm Tom and I am currently studying computer science at UEA, I am responsible for most of the JavaScript including the dynamic loading and the signup sheet, as well as implementing node and express into the website"
         },
         {
             "name":"Felix",
@@ -13,7 +13,7 @@
         },
         {
             "name":"Harry",
-            "textContent":"I'm Harry Auton-Randall and I was one of the larger contributors at the beginning of development, coding the html for the home page, tab functionality for the content and team pages, and the first attempt at dynamically loaded content. I also wrote the site guide, and assisted with other miscellaneous tasks."
+            "textContent":"I'm Harry Auton-Randall and I coded the HTML for the home page, tab functionality in JavaScript for the content and team pages, and the first attempt at dynamically loaded content. I also wrote the site guide, and assisted with other miscellaneous tasks."
         }
     ]
 }

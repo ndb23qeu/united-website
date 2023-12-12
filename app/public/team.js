@@ -72,6 +72,6 @@ let text = document.querySelector("#tabText > p");
 let header = document.querySelector("header > h1");
 let par = document.querySelector("section > p");
 let buttons =document.querySelectorAll("button");
-let pfp = document.querySelector("#teamImage")
+let pfp = document.querySelector("#mainImg")
 tab.addEventListener("click", toggleTab);
 window.addEventListener("DOMContentLoaded", loadContent, false);

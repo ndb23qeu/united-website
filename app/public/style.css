@@ -24,7 +24,7 @@
 }
 
 main{
-    min-height: 80vh;
+    min-height: 73vh;
 }
 body {
     font-family: Lato, Arial, Helvetica, sans-serif;
@@ -205,10 +205,10 @@ button {
     border-radius: 32px;
     margin: 16px auto;
     width: 50%;
-
 }
 #teamImage {
-    width:100%;
+    float:right;
+    width:19%;
     border-radius: 8px;
 }
 #mainA {
@@ -276,7 +276,7 @@ button {
     background-color: var(--black1);
 }
 
-#tabText.felix {
+.felix {
     background-color: rgb(225, 204, 218);
     border-color: rgb(81, 32, 74);
 }
@@ -383,6 +383,7 @@ footer {
 
     #tabText{
         margin: auto 5%;
+        height: 19%;
     }
     #mainA {
         display: block;

@@ -38,7 +38,7 @@ function onTextReady(text){
     }else{
         confirmation.text="An error has occured please try again later"
     }
-    console.log(confirmation.text)
+    // console.log(confirmation.text)
 }
 
 function cleartext(){

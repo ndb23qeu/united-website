@@ -13,7 +13,6 @@ function toggleNav()
         classes.add('showNav');
         classes.remove('hideNav');
     }
-    console.log('hamburger click');
 }
 
 let hbmenu = document.querySelector('#hamburger');

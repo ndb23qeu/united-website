@@ -1,5 +1,5 @@
 function onNavResponse(response) {
-    console.log(response);
+    // console.log(response);
     response.text().then(onNavProcessed).then(findActive);
 }
 function findActive(){
@@ -24,7 +24,7 @@ function onError(error) {
     console.log(error);
 }
 function onFooterResponse(response) {
-    console.log(response);
+    // console.log(response);
     response.text().then(onFooterProcessed);
 }
 function onFooterProcessed(text) {

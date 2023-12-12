@@ -26,7 +26,8 @@ function toggleTab(e)
     {
         const bP = e.target.textContent;
         if (Object.keys(filedata.buttons).includes(bP)){
-            document.querySelector("#tabActive").removeAttribute("id");
+            if ((document.querySelector('#tabActive')) != null)
+            {document.querySelector("#tabActive").removeAttribute("id");}
             tabContent.textContent = filedata.buttons[bP];
             e.target.id = "tabActive";
             image.setAttribute("src", "images/climate" + bP + ".png")

@@ -118,18 +118,22 @@ h1 {
 
 #tabs {
     text-align: center;
-    width: 90%;
+    width: 100%;
+    padding:0;
 }
 #tabs li {
     display:inline-block;
     margin: 4px;
+    width: 15%;
 }
-#tabs button {
+.tab {
+    width:100%;
     color:black;
     border:0;
     padding: 8px 16px;
     background-color: var(--tan3);
     border-radius: 5px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
 }
 #tabs button:hover {
     background-color: var(--tan2);
@@ -137,8 +141,8 @@ h1 {
 #tabs button:active {
     box-shadow:inset 2px 2px 4px gray;
 }
-#tabactive {
-    font-weight: bold;
+#tabActive {
+    font-weight:bold;
 }
 #tabText {
     align-content: center;
@@ -270,6 +274,7 @@ footer {
     border-radius:8px;
     background: var(--tan2);
     text-align: center;
+    padding: 0.1em;
 }
 
 @media only screen and (max-width:850px)  {
@@ -288,7 +293,7 @@ footer {
     }
     .hideNav{
         animation-name: hidenavanim;
-        animation-duration: 0.3s;
+        animation-duration: 0.5s;
     }
     .navBar {
         position:absolute;
@@ -351,6 +356,11 @@ footer {
     #mainImg{
         width: 90%;
     }
+
+    #tabs li {
+        width: 45%;
+    }
+
     #tabText{
         margin: auto 5%;
     }
